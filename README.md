@@ -4,7 +4,7 @@ I build test automation and the systems around it: frameworks, CI pipelines, loa
 
 Every repo has CI on GitHub Actions, a protected `main`, required checks, and pull requests reviewed with my own [PR review skill](https://github.com/Kurtis-H/qa-agent-skills/blob/main/skills/pr-review/SKILL.md).
 
-### 🎟️ The booking platform: one product, tested at every layer
+### The booking platform: one product, tested at every layer
 
 A small ticketing product built end to end, so each kind of testing has something real to test.
 
@@ -15,9 +15,9 @@ A small ticketing product built end to end, so each kind of testing has somethin
 | [booking-mobile](https://github.com/Kurtis-H/booking-mobile) | Flutter app | Unit, widget, golden and accessibility tests; integration tests and Maestro flows on an Android emulator in CI |
 | [platform-probe](https://github.com/Kurtis-H/platform-probe) | Go synthetic monitor, standard library only | Concurrent checks, a purchase journey that also checks access control, Prometheus metrics, fuzzing, race detector |
 | [locator-lens](https://github.com/Kurtis-H/locator-lens) | Chrome extension (Manifest V3) | Suggests the most robust Playwright or Cypress locator; tested by loading the real extension and running every suggestion |
-| [framework-showdown](https://github.com/Kurtis-H/framework-showdown) | 🚧 Playwright vs Cypress vs Appium vs Maestro | One test plan, four frameworks, measured in CI for setup time, speed, flakiness and code size |
+| [framework-showdown](https://github.com/Kurtis-H/framework-showdown) | Playwright vs Cypress vs Appium vs Maestro | One test plan in four frameworks, measured over 10 CI runs each for setup time, speed, flakiness and code size |
 
-### 🧪 Test frameworks and tooling
+### Test frameworks and tooling
 
 | Project | What it is |
 |---|---|
@@ -25,14 +25,14 @@ A small ticketing product built end to end, so each kind of testing has somethin
 | [bug-hunt-lab](https://github.com/Kurtis-H/bug-hunt-lab) | Practice app with 21 switchable bugs and a mutation-testing scorecard showing which bugs a test suite catches |
 | [flaky-hunter](https://github.com/Kurtis-H/flaky-hunter) | Finds flaky tests across CI runs from JUnit XML, and tells them apart from real regressions |
 
-### 🔐 Security testing
+### Security testing
 
 | Project | What it is |
 |---|---|
 | [vuln-shop](https://github.com/Kurtis-H/vuln-shop) | Intentionally vulnerable shop: every hole has a test proving it exists and a test proving the fix works |
 | [scan-triage-bot](https://github.com/Kurtis-H/scan-triage-bot) | Merges ZAP, Trivy and SARIF reports into one ranked, deduplicated list with explainable scores |
 
-### 🤖 AI for QA
+### AI for QA
 
 | Project | What it is |
 |---|---|
