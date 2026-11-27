@@ -40,6 +40,7 @@ A small ticketing product built end to end, so each kind of testing has somethin
 |---|---|
 | [qa-agent-skills](https://github.com/Kurtis-H/qa-agent-skills) | QA know-how packaged as skills for AI coding agents, plus a harness that measures whether each skill actually helps |
 | [testgen-agent](https://github.com/Kurtis-H/testgen-agent) | Agent that writes API tests from an OpenAPI spec and must prove each test before it's kept |
+| [agent-guardrails-lab](https://github.com/Kurtis-H/agent-guardrails-lab) | Guardrails for a tool-using AI agent, proven against a worst-case agent that obeys every prompt injection: 11 attacks blocked, real tasks still done, 19 of 19 weakened rules caught |
 | [llm-arena](https://github.com/Kurtis-H/llm-arena) | Tests AI with AI: attacker, target and judge models, plus a check on whether the judge can be trusted |
 | [bug-report-enhancer](https://github.com/Kurtis-H/bug-report-enhancer) | Turns vague bug reports into actionable ones, with secret redaction and a check for details the AI made up |
 
