@@ -10,12 +10,15 @@ A small ticketing product built end to end, so each kind of testing has somethin
 
 | Project | What it is | What it shows |
 |---|---|---|
-| [api-performance-lab](https://github.com/Kurtis-H/api-performance-lab) | Python / FastAPI / Postgres API with six switchable performance problems | k6 load, soak, spike and stress tests with a regression gate; contract tests (Schemathesis); Postman; Grafana. Found three real bugs I hadn't planted |
-| [booking-web](https://github.com/Kurtis-H/booking-web) | React + TypeScript front end | Vitest and MSW component tests, Playwright e2e on desktop and mobile, axe accessibility checks, OpenAPI-generated types |
-| [booking-mobile](https://github.com/Kurtis-H/booking-mobile) | Flutter app | Unit, widget, golden and accessibility tests; integration tests and Maestro flows on an Android emulator in CI |
+| [api-performance-lab](https://github.com/Kurtis-H/api-performance-lab) | Python / FastAPI / Postgres API with six switchable performance problems | k6 load, soak, spike and stress tests with a regression gate; contract tests (Schemathesis); verifies both apps' Pact contracts; Postman; Grafana. Found three real bugs I hadn't planted |
+| [booking-web](https://github.com/Kurtis-H/booking-web) | React + TypeScript front end | Vitest and MSW component tests, Playwright e2e on desktop and mobile, axe accessibility checks, OpenAPI-generated types, a Pact consumer contract |
+| [booking-mobile](https://github.com/Kurtis-H/booking-mobile) | Flutter app | Unit, widget, golden and accessibility tests; integration tests and Maestro flows on an Android emulator in CI; a Pact consumer contract |
 | [platform-probe](https://github.com/Kurtis-H/platform-probe) | Go synthetic monitor, standard library only | Concurrent checks, a purchase journey that also checks access control, Prometheus metrics, fuzzing, race detector |
 | [locator-lens](https://github.com/Kurtis-H/locator-lens) | Chrome extension (Manifest V3) | Suggests the most robust Playwright or Cypress locator; tested by loading the real extension and running every suggestion |
 | [framework-showdown](https://github.com/Kurtis-H/framework-showdown) | Playwright vs Cypress vs Appium vs Maestro | One test plan in four frameworks, measured over 10 CI runs each for setup time, speed, flakiness and code size |
+| [booking-pentest](https://github.com/Kurtis-H/booking-pentest) | Penetration test of the API and web app | A professional report (CVSS 3.1, OWASP API Top 10) where every finding is a test that runs in CI. 8 findings, 5 fixed and retested, 3 accepted with reasons |
+| [mobile-security-lab](https://github.com/Kurtis-H/mobile-security-lab) | Security assessment of the Android app (OWASP MASVS) | The release APK is built and scanned with MobSF in CI, and every scanner item must be triaged. Found an issue MobSF can't see in Flutter apps; 4 of 5 findings fixed and retested |
+| [resilience-lab](https://github.com/Kurtis-H/resilience-lab) | Fault injection with Toxiproxy | The database goes down, slows, drops connections or stays locked, and the API goes silent. Each finding is an experiment; orders are checked to stay all or nothing. 4 findings, all fixed and retested |
 
 ### Test frameworks and tooling
 
@@ -46,6 +49,6 @@ A small ticketing product built end to end, so each kind of testing has somethin
 
 ### Toolbox
 
-**Testing:** Playwright · Cypress · Appium · Maestro · pytest · Vitest · Flutter test · k6 · Schemathesis · Postman/Newman · axe · OWASP ZAP · Trivy · Semgrep · Sigstore/cosign · Syft · Grype  
+**Testing:** Playwright · Cypress · Appium · Maestro · pytest · Vitest · Flutter test · k6 · Schemathesis · Pact · Postman/Newman · axe · Toxiproxy · OWASP ZAP · MobSF · Trivy · Semgrep · Sigstore/cosign · Syft · Grype  
 **Languages:** TypeScript/JavaScript · Python · Go · Dart  
 **Platform:** GitHub Actions · Docker · Postgres · Prometheus · Grafana · Android emulator CI
