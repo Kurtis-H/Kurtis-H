@@ -29,7 +29,7 @@ A small ticketing product built end to end, so each kind of testing has somethin
 
 | Project | What it is |
 |---|---|
-| [supply-chain-lab](https://github.com/Kurtis-H/supply-chain-lab) | SBOMs, keyless-signed images and SLSA provenance, with a deploy gate proven in CI to reject tampered images, and a malicious-dependency demo showing which defences really stop it |
+| [supply-chain-lab](https://github.com/Kurtis-H/supply-chain-lab) | SBOMs, keyless-signed images and SLSA provenance, with a deploy gate proven in CI to reject tampered images, and a malicious-dependency demo showing which defenses really stop it |
 | [security-practice-lab](https://github.com/Kurtis-H/security-practice-lab) | Automated OWASP Juice Shop attacks proven by the shop's own scoreboard, Atheris fuzzing that finds bugs a passing test suite missed, and a test runner built from scratch and checked with mutation testing |
 | [vuln-shop](https://github.com/Kurtis-H/vuln-shop) | Intentionally vulnerable shop: every hole has a test proving it exists and a test proving the fix works |
 | [scan-triage-bot](https://github.com/Kurtis-H/scan-triage-bot) | Merges ZAP, Trivy and SARIF reports into one ranked, deduplicated list with explainable scores |
