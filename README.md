@@ -4,6 +4,8 @@ I build test automation and the systems around it: frameworks, CI pipelines, loa
 
 Every repo has CI on GitHub Actions, a protected `main`, required checks, and pull requests reviewed with my own [PR review skill](https://github.com/Kurtis-H/qa-agent-skills/blob/main/skills/pr-review/SKILL.md).
 
+**[Quality dashboard](https://kurtis-h.github.io/quality-dashboard/):** CI status for every repo and every assessment finding on one page, rebuilt daily and checked against its sources before it's published ([source](https://github.com/Kurtis-H/quality-dashboard)).
+
 ### The booking platform: one product, tested at every layer
 
 A small ticketing product built end to end, so each kind of testing has something real to test.
